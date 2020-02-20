@@ -1,0 +1,59 @@
+<%- include("partials/header") %>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>WtT</h1>
+            <p>WHATS the WEATHER</p>
+        </div>
+
+    </div>
+
+
+
+    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Weather Application<i class="fa fa-cloud"></i></h5>
+                        <form class="form-signin" action="/results" method="GET">
+                            <div class="form-label-group">
+                                <label><b>Enter the City Name</b></label>
+                                <input type="text" class="form-control" name="city" placeholder="Enter City Name">
+
+                            </div>
+                            <br>
+
+
+
+
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Get Weather<i class="fa fa-search"></i></button>
+                            <hr class="my-4">
+                            <p>Created By Shrey Patel</p>
+
+                        </form>
+                        <h5 class="card-title text-center">Movie DataBase<i class="fa fa-cloud"></i></h5>
+                        <form class="form-signin" action="/movie" method="GET">
+                            <div class="form-label-group">
+                                <label><b>Enter the Movie Name</b></label>
+                                <input type="text" class="form-control" name="moviename" placeholder="Enter City Name">
+
+                            </div>
+                            <br>
+
+
+
+
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Get Data<i class="fa fa-search"></i></button>
+                            <hr class="my-4">
+                            <p>Created By Shrey Patel</p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include("partials/footer") %>

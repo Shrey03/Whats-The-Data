@@ -1,0 +1,53 @@
+<%- include("partials/header") %>
+
+    <% data.forEach(function(data){ %>
+
+
+        <div id="check1" class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">
+                <%= data["city_name"]%> &NonBreakingSpace;Weather</div>
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="thermometer icon"></i>
+                    <%= data["temp"]%>°C &NonBreakingSpace;Temperature
+
+                </h4>
+                <h4 class="card-title">
+                    <i class="thermometer icon"></i>
+                    <%= data["app_temp"]%>°C &NonBreakingSpace;Feels Like
+
+                </h4>
+                <h4 class="card-title">
+                    <i class="sun icon"></i>
+                    <%= data["sunrise"]%> &NonBreakingSpace;Sun Rise
+
+                </h4>
+                <h4 class="card-title">
+                    <i class="moon outline icon"></i>
+                    <%= data["sunset"]%>&NonBreakingSpace; Sun Set
+
+                </h4>
+                <h4 class="card-title">
+                    <i class="cloudversify icon"></i>
+                    <%= data["wind_spd"]%> &NonBreakingSpace; Wind Speed
+
+                </h4>
+                <p class="card-text">
+                    <i class="cloud icon"></i>
+                    <%= data["weather"]["description"]%>
+                </p>
+                <p class="card-text">
+                    <i class="cloud icon"></i>
+                    <%= data["alerts"]%>
+                </p>
+                <hr class="my-4">
+                <p>Created By Shrey Patel</p>
+            </div>
+
+            <% }) %>
+
+
+
+
+
+                <%- include("partials/footer") %>

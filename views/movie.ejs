@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+    <% data["Search"].forEach(function(movie){ %>
+
+
+
+
+
+        <div id="check1" class="card text-white bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">
+                <%= movie["Title"]%>
+                    &NonBreakingSpace;<small><%= movie["Year"]%>
+                </small>
+                    <h4 class="img-thumbnail">
+                        <img src=" <%= movie.Poster %>">
+
+
+                    </h4>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <% }) %>
+            <%- include("partials/footer") %>
